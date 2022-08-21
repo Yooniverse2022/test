@@ -1,0 +1,61 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  nav:
+    - title: "Gunbam aesthetics"
+      section: services
+    - title: "Birth of Gunbam"
+      section: portfolio
+    - title: "About Gunbam"
+      section: about
+    - title: "Contact Gunbam"
+      section: contact
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  nav:
+    - title: "Servicios"
+      section: servicios
+    - title: "Portafolio"
+      section: portafolio
+    - title: "Sobre Nosotros"
+      section: nosotros
+    - title: "Contáctenos"
+      section: contacto
+
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
+
+# Deutsch
+# -----------------
+de: &DEFAULT_DE
+  nav:
+    - title: "Leistungen"
+      section: Leistungen
+    - title: "Portfolio"
+      section: Portfolio
+    - title: "Über uns"
+      section: Ueber
+    - title: "Kontakt"
+      section: Kontakt
+
